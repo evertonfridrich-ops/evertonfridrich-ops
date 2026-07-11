@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" role="img" aria-label="Everton Fridrich">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117">
+        <animate attributeName="stop-color" values="#0D1117;#1A0A0A;#0D1117" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#C41E3A">
+        <animate attributeName="stop-color" values="#C41E3A;#E85D04;#C41E3A" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#7B1113"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.85;transform:scale(1.02)} }
+      @keyframes drift { from{transform:translateX(0)} to{transform:translateX(40px)} }
+      .title { animation: pulse 3.2s ease-in-out infinite; filter: url(#glow); }
+      .particle { animation: drift 8s ease-in-out infinite alternate; }
+    </style>
+  </defs>
+  <rect width="800" height="200" fill="url(#bg)"/>
+  <circle class="particle" cx="90" cy="50" r="3" fill="#fff" fill-opacity=".35"/>
+  <circle class="particle" cx="720" cy="70" r="2.5" fill="#fff" fill-opacity=".3"/>
+  <circle class="particle" cx="640" cy="40" r="2" fill="#E85D04" fill-opacity=".5"/>
+  <text class="title" x="400" y="85" text-anchor="middle" font-size="40" font-family="Segoe UI,Arial,sans-serif" fill="#FFFFFF" font-weight="700">Everton Fridrich</text>
+  <text x="400" y="118" text-anchor="middle" font-size="15" font-family="Segoe UI,Arial,sans-serif" fill="rgba(255,255,255,0.88)">Food-tech · SaaS multi-tenant · Logística inteligente</text>
+  <path fill="rgba(255,255,255,0.08)" d="M0,155 C200,180 400,130 800,165 L800,200 L0,200 Z">
+    <animate attributeName="d" dur="7s" repeatCount="indefinite"
+      values="M0,155 C200,180 400,130 800,165 L800,200 L0,200 Z;M0,165 C200,140 400,175 800,150 L800,200 L0,200 Z;M0,155 C200,180 400,130 800,165 L800,200 L0,200 Z"/>
+  </path>
+</svg>

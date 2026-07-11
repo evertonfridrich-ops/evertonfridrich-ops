@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160">
+  <rect width="720" height="160" fill="#0D1117"/>
+  <style>
+    .drop { font-family: ui-monospace, Consolas, monospace; font-size: 11px; fill: #C41E3A; }
+    @keyframes fall {
+      0% { transform: translateY(-20px); opacity: 0; }
+      10% { opacity: 1; }
+      100% { transform: translateY(170px); opacity: 0; }
+    }
+    .c1 { animation: fall 3.2s linear infinite; }
+    .c2 { animation: fall 4.1s linear infinite 0.4s; }
+    .c3 { animation: fall 2.8s linear infinite 0.8s; }
+    .c4 { animation: fall 3.6s linear infinite 1.2s; }
+    .c5 { animation: fall 4.4s linear infinite 0.2s; }
+    .c6 { animation: fall 3.0s linear infinite 1.6s; }
+  </style>
+  <g class="c1 drop"><text x="40" y="0">01</text><text x="40" y="14">10</text><text x="40" y="28">11</text></g>
+  <g class="c2 drop" fill="#E85D04"><text x="120" y="0">SaaS</text><text x="120" y="14">RLS</text><text x="120" y="28">OTP</text></g>
+  <g class="c3 drop"><text x="220" y="0">NEXT</text><text x="220" y="14">ZOD</text><text x="220" y="28">H3</text></g>
+  <g class="c4 drop" fill="#3FCF8E"><text x="340" y="0">SQL</text><text x="340" y="14">API</text><text x="340" y="28">ETA</text></g>
+  <g class="c5 drop"><text x="460" y="0">GPS</text><text x="460" y="14">KDS</text><text x="460" y="28">PDV</text></g>
+  <g class="c6 drop" fill="#E85D04"><text x="580" y="0">CI</text><text x="580" y="14">SBOM</text><text x="580" y="28">SLO</text></g>
+  <text x="360" y="90" text-anchor="middle" fill="#C9D1D9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="600">evertonfridrich-ops · shipping food-tech</text>
+</svg>

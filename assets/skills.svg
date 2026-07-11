@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="220" viewBox="0 0 520 220">
+  <style>
+    .bar-fill { animation: fill 2s ease-out forwards; }
+    @keyframes fill { from { width: 0; } }
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; fill: #C9D1D9; }
+  </style>
+  <rect width="520" height="220" rx="12" fill="#0D1117"/>
+
+  <!-- TypeScript 92% -->
+  <text x="16" y="28">TypeScript / Next.js — 92%</text>
+  <rect x="16" y="36" width="488" height="14" rx="7" fill="#1a1a2e"/>
+  <rect class="bar-fill" x="16" y="36" width="449" height="14" rx="7" fill="#C41E3A">
+    <animate attributeName="width" from="0" to="449" dur="2s" fill="freeze"/>
+  </rect>
+
+  <!-- Supabase 88% -->
+  <text x="16" y="72">Supabase / RLS Multi-tenant — 88%</text>
+  <rect x="16" y="80" width="488" height="14" rx="7" fill="#1a1a2e"/>
+  <rect x="16" y="80" width="0" height="14" rx="7" fill="#3FCF8E">
+    <animate attributeName="width" from="0" to="430" dur="2.1s" fill="freeze"/>
+  </rect>
+
+  <!-- Logistics 85% -->
+  <text x="16" y="116">Realtime Logistics / Expo — 85%</text>
+  <rect x="16" y="124" width="488" height="14" rx="7" fill="#1a1a2e"/>
+  <rect x="16" y="124" width="0" height="14" rx="7" fill="#E85D04">
+    <animate attributeName="width" from="0" to="415" dur="2.2s" fill="freeze"/>
+  </rect>
+
+  <!-- Payments 80% -->
+  <text x="16" y="160">Payments / Webhooks — 80%</text>
+  <rect x="16" y="168" width="488" height="14" rx="7" fill="#1a1a2e"/>
+  <rect x="16" y="168" width="0" height="14" rx="7" fill="#635BFF">
+    <animate attributeName="width" from="0" to="390" dur="2.3s" fill="freeze"/>
+  </rect>
+
+  <!-- Platform 78% -->
+  <text x="16" y="204">CI/CD · Security · Observability — 78%</text>
+  <rect x="16" y="212" width="488" height="14" rx="7" fill="#1a1a2e"/>
+  <rect x="16" y="212" width="0" height="14" rx="7" fill="#58A6FF">
+    <animate attributeName="width" from="0" to="381" dur="2.4s" fill="freeze"/>
+  </rect>
+</svg>

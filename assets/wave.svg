@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" fill="none" width="1440" height="80">
+  <style>
+    .wave { animation: wave 4s ease-in-out infinite alternate; }
+    @keyframes wave {
+      from { d: path("M0,40 C360,80 720,0 1080,40 C1260,60 1380,20 1440,40 L1440,80 L0,80 Z"); }
+      to   { d: path("M0,40 C360,0 720,80 1080,40 C1260,20 1380,60 1440,40 L1440,80 L0,80 Z"); }
+    }
+  </style>
+  <path class="wave" fill="#C41E3A" fill-opacity="0.18"
+    d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,20 1440,40 L1440,80 L0,80 Z" />
+  <path fill="#E85D04" fill-opacity="0.1"
+    d="M0,50 C400,20 800,70 1440,45 L1440,80 L0,80 Z" />
+</svg>
