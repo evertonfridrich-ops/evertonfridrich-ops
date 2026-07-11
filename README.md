@@ -90,7 +90,7 @@
 | [`conselho-ia-saas`](https://github.com/evertonfridrich-ops/conselho-ia-saas) | SaaS de conselho consultivo com IA | Privado |
 | [`visao-comps-akaai-proptech`](https://github.com/evertonfridrich-ops/visao-comps-akaai-proptech) | Protótipo Visão Comps (proptech) | Privado |
 
-> **Ação crítica:** 0 repositórios públicos = perfil invisível para recrutadores/VCs. Priorize tornar público o README institucional do Séquito (ou um mirror `sequito-public` com docs + demos).
+> **Próximo passo de visibilidade:** o produto Séquito ainda é privado — considere um mirror público de docs/demo ou open-core para recrutadores/VCs avaliarem o código.
 
 <img src="./assets/wave.svg" width="100%" alt=""/>
 
