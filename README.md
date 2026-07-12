@@ -106,7 +106,6 @@
 
 ### Estatísticas
 
-<!-- Mirrors estáveis: o endpoint oficial vercel.app retorna 503/402 com frequência -->
 <p align="center">
   <img height="165" src="https://github-readme-stats-one-bice.vercel.app/api?username=evertonfridrich-ops&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=C41E3A&icon_color=E85D04&text_color=C9D1D9&ring_color=C41E3A&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats" />
   &nbsp;
@@ -120,51 +119,6 @@
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=evertonfridrich-ops&bg_color=0D1117&color=C41E3A&line=E85D04&point=FFFFFF&area=true&area_color=C41E3A&hide_border=true" alt="Activity Graph" width="100%" />
 </p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=evertonfridrich-ops&theme=github_dark" alt="Profile details" height="200" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=evertonfridrich-ops&theme=github_dark" alt="Repos per language" height="150" />
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=evertonfridrich-ops&theme=github_dark" alt="Most commit language" height="150" />
-</p>
-
-<details>
-<summary><strong>Gráfico 3D de contribuições</strong></summary>
-<br>
-
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%" />
-
-</details>
-
-<details>
-<summary><strong>Contribution Snake</strong></summary>
-<br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/output/github-contribution-grid-snake.svg" />
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/output/github-contribution-grid-snake.svg" />
-</picture>
-
-</details>
-
-<details>
-<summary><strong>WakaTime</strong> (ative após criar conta + secret <code>WAKATIME_API_KEY</code>)</summary>
-<br>
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
-
-</details>
-
-### Skyline & presença
-
-- [GitHub Skyline 2025](https://skyline.github.com/evertonfridrich-ops/2025)
-- [GitHub Skyline 2026](https://skyline.github.com/evertonfridrich-ops/2026)
-- Starred: [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=C41E3A&height=120&section=footer" alt=""/>
 
