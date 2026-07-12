@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "0 */12 * * *"
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/snake.yml"
+      - "README.md"
 
 permissions:
   contents: write
@@ -13,20 +17,39 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generate Snake
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Snake (Séquito 2026 palette)
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=#E85D04&color_dots=#0D1117,#3D0C0C,#7B1113,#C41E3A,#FF6B35
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#FF6B35&color_dots=#0D1117,#1A0A0A,#7B1113,#C41E3A,#E85D04
+            dist/github-contribution-grid-snake-ocean.svg?color_snake=#58A6FF&color_dots=#0D1117,#0A2540,#1F6FEB,#58A6FF,#79C0FF
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push to output branch
+      - name: Publish to assets/snake on main
+        run: |
+          mkdir -p assets/snake
+          cp -f dist/github-contribution-grid-snake.svg assets/snake/snake.svg
+          cp -f dist/github-contribution-grid-snake-dark.svg assets/snake/snake-dark.svg
+          cp -f dist/github-contribution-grid-snake-ocean.svg assets/snake/snake-ocean.svg
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git add assets/snake/*.svg
+          git diff --quiet && git diff --staged --quiet || (
+            git commit -m "chore: update contribution snake 2026" &&
+            git push
+          )
+
+      - name: Mirror to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

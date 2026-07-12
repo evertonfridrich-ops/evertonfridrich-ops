@@ -124,20 +124,28 @@
   <img src="./assets/matrix-rain.svg" alt="Matrix rain" width="720"/>
 </p>
 
-### Engenharia visual avançada
+### Engenharia visual avançada · 2026
 
 <p align="center">
-  <strong>🐍 Contribution Snake</strong><br/>
-  <sub>Atualizado automaticamente a cada 12h via GitHub Actions</sub>
+  <strong>🐍 Contribution Snake — Séquito Edition</strong><br/>
+  <sub>Paleta food-tech · atualização automática a cada 12h · light / dark / ocean</sub>
 </p>
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/output/github-contribution-grid-snake.svg" />
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/snake/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/snake/snake.svg" />
+  <img alt="Contribution Snake 2026" src="./assets/snake/snake.svg" width="100%" />
 </picture>
 </p>
+
+<details>
+<summary><strong>🌊 Variante Ocean</strong> (clique para expandir)</summary>
+<br/>
+<p align="center">
+  <img alt="Snake Ocean" src="./assets/snake/snake-ocean.svg" width="100%" />
+</p>
+</details>
 
 <p align="center">
   <strong>📊 Gráfico 3D de contribuições</strong>
@@ -148,8 +156,6 @@
 </p>
 
 <p align="center">
-  <a href="https://skyline.github.com/evertonfridrich-ops/2025">🏙️ GitHub Skyline 2025</a>
-  ·
   <a href="https://skyline.github.com/evertonfridrich-ops/2026">🏙️ GitHub Skyline 2026</a>
 </p>
 
