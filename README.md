@@ -4,13 +4,23 @@
   Paleta: Séquito — #0D1117 / #C41E3A / #E85D04 / #C9D1D9
 -->
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,18&height=180&section=header&text=Everton%20Fridrich&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Food-tech%20%C2%B7%20SaaS%20multi-tenant%20%C2%B7%20Log%C3%ADstica&descAlignY=51&descSize=14" alt="Everton Fridrich"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=C41E3A&height=180&section=header&text=Everton%20Fridrich&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Food-tech%20%C2%B7%20SaaS%20multi-tenant%20%C2%B7%20Log%C3%ADstica&descAlignY=55&descSize=14" alt="Everton Fridrich"/>
+
+<br/>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3200&pause=1200&color=C41E3A&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=820&height=90&lines=Constr%C3%B3i+sistemas+que+entregam+comida;SaaS+multi-tenant+%C2%B7+PDV+%C2%B7+Log%C3%ADstica;Next.js+%2B+Supabase+%2B+Expo" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3200&pause=1200&color=C41E3A&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=820&height=70&lines=Constr%C3%B3i+sistemas+que+entregam+comida;SaaS+multi-tenant+%C2%B7+PDV+%C2%B7+Log%C3%ADstica" alt="Typing SVG" />
   </a>
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase"/>
+  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo"/>
+</p>
+
+<br/>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=evertonfridrich-ops&color=c41e3a&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
@@ -96,9 +106,11 @@
 
 ### Estatísticas
 
+<!-- Mirrors estáveis: o endpoint oficial vercel.app retorna 503/402 com frequência -->
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=evertonfridrich-ops&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=C41E3A&icon_color=E85D04&text_color=C9D1D9&ring_color=C41E3A&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=evertonfridrich-ops&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=C41E3A&text_color=C9D1D9&langs_count=8" alt="Top Languages" />
+  <img height="165" src="https://github-readme-stats-one-bice.vercel.app/api?username=evertonfridrich-ops&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=C41E3A&icon_color=E85D04&text_color=C9D1D9&ring_color=C41E3A&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats" />
+  &nbsp;
+  <img height="165" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=evertonfridrich-ops&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=C41E3A&text_color=C9D1D9&langs_count=8&cache_seconds=86400" alt="Top Languages" />
 </p>
 
 <p align="center">
@@ -110,7 +122,13 @@
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=evertonfridrich-ops&theme=onedark&no-frame=true&no-bg=true&column=7&margin-w=5&margin-h=5" alt="Trophies" width="100%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=evertonfridrich-ops&theme=github_dark" alt="Profile details" height="200" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=evertonfridrich-ops&theme=github_dark" alt="Repos per language" height="150" />
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=evertonfridrich-ops&theme=github_dark" alt="Most commit language" height="150" />
 </p>
 
 <details>
@@ -148,16 +166,7 @@
 - [GitHub Skyline 2026](https://skyline.github.com/evertonfridrich-ops/2026)
 - Starred: [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)
 
-### Contato / posicionamento
-
-| Campo | Valor recomendado (preencher na UI do GitHub) |
-| ----- | --------------------------------------------- |
-| **Bio** | Building Séquito — multi-tenant food-tech SaaS (delivery, PDV, logistics) |
-| **Location** | Brasil |
-| **Website** | URL do deploy Vercel do Séquito |
-| **Pronouns / hireable** | conforme meta de carreira |
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,18&height=120&section=footer" alt=""/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=C41E3A&height=120&section=footer" alt=""/>
 
 <p align="center">
   <img src="./assets/pulse-icon.svg" width="48" alt=""/>
