@@ -120,6 +120,39 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=evertonfridrich-ops&bg_color=0D1117&color=C41E3A&line=E85D04&point=FFFFFF&area=true&area_color=C41E3A&hide_border=true" alt="Activity Graph" width="100%" />
 </p>
 
+<p align="center">
+  <img src="./assets/matrix-rain.svg" alt="Matrix rain" width="720"/>
+</p>
+
+### Engenharia visual avançada
+
+<p align="center">
+  <strong>🐍 Contribution Snake</strong><br/>
+  <sub>Atualizado automaticamente a cada 12h via GitHub Actions</sub>
+</p>
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/output/github-contribution-grid-snake.svg" />
+</picture>
+</p>
+
+<p align="center">
+  <strong>📊 Gráfico 3D de contribuições</strong>
+</p>
+
+<p align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://skyline.github.com/evertonfridrich-ops/2025">🏙️ GitHub Skyline 2025</a>
+  ·
+  <a href="https://skyline.github.com/evertonfridrich-ops/2026">🏙️ GitHub Skyline 2026</a>
+</p>
+
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=C41E3A&height=120&section=footer" alt=""/>
 
 <p align="center">
