@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/main/assets/header.svg" alt="Everton Fridrich — Enterprise Systems Architecture" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=C41E3A&height=190&section=header&text=Everton%20Fridrich&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=Enterprise%20Food-Tech%20%C2%B7%20Multi-Tenant%20SaaS%20%C2%B7%20Realtime%20H3%20Logistics&descAlignY=58&descSize=14" alt="Everton Fridrich — Enterprise Systems Architecture" />
 </div>
 
 <br/>

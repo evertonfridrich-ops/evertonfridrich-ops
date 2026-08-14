@@ -1,122 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="320" role="img" aria-label="Everton Fridrich — Systems & Infrastructure Architecture">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090D13" />
-      <stop offset="60%" stop-color="#0D1117" />
-      <stop offset="100%" stop-color="#1A0A0F" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117">
+        <animate attributeName="stop-color" values="#0D1117;#180A0E;#0D1117" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#C41E3A">
+        <animate attributeName="stop-color" values="#C41E3A;#E85D04;#C41E3A" dur="6s" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
-
-    <!-- Crimson Accent Gradient -->
-    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#C41E3A" />
-      <stop offset="50%" stop-color="#E85D04" />
-      <stop offset="100%" stop-color="#C41E3A" />
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C41E3A"/>
+      <stop offset="50%" stop-color="#E85D04"/>
+      <stop offset="100%" stop-color="#3FCF8E"/>
     </linearGradient>
-
-    <!-- Radar Sweep Gradient -->
-    <linearGradient id="radar-sweep" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#C41E3A" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#C41E3A" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
-    <style>
-      @keyframes pulse-dot { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
-      @keyframes scanline { from { transform: translateY(0); } to { transform: translateY(320px); } }
-      @keyframes rotate-radar { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-      @keyframes dash-flow { from { stroke-dashoffset: 40; } to { stroke-dashoffset: 0; } }
-
-      .hud-title { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace; font-size: 32px; font-weight: 800; fill: #FFFFFF; letter-spacing: 2px; }
-      .hud-sub { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace; font-size: 13px; font-weight: 600; fill: #C9D1D9; letter-spacing: 3px; }
-      .hud-tag { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #E85D04; font-weight: 700; }
-      .hud-metric { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #8B949E; }
-      .hud-val { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; fill: #38BDF8; }
-      .status-online { fill: #3FCF8E; animation: pulse-dot 2s infinite ease-in-out; }
-      .radar-sweep-fan { transform-origin: 1040px 160px; animation: rotate-radar 6s linear infinite; }
-      .data-flow-line { stroke: #C41E3A; stroke-width: 1.5; stroke-dasharray: 6 4; animation: dash-flow 1.5s linear infinite; }
-    </style>
   </defs>
 
-  <!-- Base Plate -->
-  <rect width="1200" height="320" rx="14" fill="url(#bg-grad)" stroke="#21262D" stroke-width="1.5"/>
+  <!-- Background Plate -->
+  <rect width="1200" height="220" rx="12" fill="url(#bg)" stroke="#30363D" stroke-width="1"/>
 
-  <!-- Top Tech Bar / Status Header -->
-  <rect x="0" y="0" width="1200" height="38" rx="14" fill="#0D1117" fill-opacity="0.8"/>
-  <rect x="0" y="37" width="1200" height="1" fill="#30363D"/>
+  <!-- Top Tech Bar -->
+  <rect x="0" y="0" width="1200" height="34" rx="12" fill="#090D13" fill-opacity="0.9"/>
+  <rect x="0" y="33" width="1200" height="1" fill="#30363D"/>
 
-  <!-- Status Indicators -->
-  <circle cx="28" cy="19" r="4.5" class="status-online"/>
-  <text x="42" y="23" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#3FCF8E">SYSTEM STATUS: TIER-0 OPERATIONAL</text>
+  <circle cx="24" cy="17" r="4" fill="#3FCF8E"/>
+  <text x="36" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="700" fill="#3FCF8E">SYSTEM STATUS: TIER-0 OPERATIONAL</text>
+  <text x="500" y="21" font-family="monospace" font-size="11" fill="#8B949E">LATENCY: &lt;120ms P99</text>
+  <text x="700" y="21" font-family="monospace" font-size="11" fill="#8B949E">INDEX: UBER H3 RES-9</text>
+  <text x="920" y="21" font-family="monospace" font-size="11" fill="#8B949E">SECURITY: ZERO-TRUST RLS</text>
+  <text x="1110" y="21" font-family="monospace" font-size="11" font-weight="700" fill="#E85D04">EST. 2026</text>
 
-  <text x="480" y="23" class="hud-metric">LATENCY: <tspan class="hud-val">&lt;120ms P99</tspan></text>
-  <text x="660" y="23" class="hud-metric">INDEX: <tspan class="hud-val">UBER H3 RES-9</tspan></text>
-  <text x="860" y="23" class="hud-metric">SECURITY: <tspan class="hud-val">RLS ZERO-TRUST</tspan></text>
-  <text x="1080" y="23" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#E85D04">EST. 2026</text>
+  <!-- Titles -->
+  <text x="40" y="75" font-family="monospace" font-size="12" font-weight="700" fill="#E85D04" letter-spacing="2">FOUNDER &amp; PRINCIPAL SYSTEMS ARCHITECT</text>
+  <text x="40" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" fill="#FFFFFF" letter-spacing="1">Everton Fridrich</text>
+  <text x="40" y="155" font-family="monospace" font-size="13" font-weight="600" fill="#C9D1D9" letter-spacing="1">ENTERPRISE FOOD-TECH ENGINE · DISTRIBUTED LOGISTICS · HIGH-THROUGHPUT REALTIME</text>
 
-  <!-- Left Cybernetic Grid lines -->
-  <path d="M 40 90 L 220 90 L 250 120 L 780 120" stroke="#30363D" stroke-width="1" fill="none"/>
-  <path d="M 40 130 L 780 130" class="data-flow-line" fill="none"/>
+  <!-- Divider Line -->
+  <rect x="40" y="175" width="1120" height="2" fill="url(#line-grad)"/>
 
-  <!-- Title & Primary Domain -->
-  <text x="40" y="80" class="hud-tag">FOUNDER &amp; PRINCIPAL SYSTEMS ARCHITECT</text>
-  <text x="40" y="122" class="hud-title">EVERTON FRIDRICH</text>
-  <text x="40" y="165" class="hud-sub">FOOD-TECH SAAS ENGINE · DISTRIBUTED LOGISTICS · HIGH-THROUGHPUT REALTIME</text>
-
-  <!-- Metric Telemetry Cards (Bottom) -->
-  <g transform="translate(40, 200)">
-    <!-- Card 1 -->
-    <rect width="210" height="85" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1"/>
-    <text x="16" y="24" class="hud-tag">SPATIAL ROUTING</text>
-    <text x="16" y="52" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#FFFFFF">Uber H3 Grid</text>
-    <text x="16" y="72" class="hud-metric">Sub-second dynamic clustering</text>
-
-    <!-- Card 2 -->
-    <rect x="225" width="210" height="85" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1"/>
-    <text x="241" y="24" class="hud-tag">MULTI-TENANCY</text>
-    <text x="241" y="52" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#FFFFFF">Strict RLS</text>
-    <text x="241" y="72" class="hud-metric">Cryptographic tenant isolation</text>
-
-    <!-- Card 3 -->
-    <rect x="450" width="210" height="85" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1"/>
-    <text x="466" y="24" class="hud-tag">ASYNC QUEUES</text>
-    <text x="466" y="52" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#FFFFFF">BullMQ/Redis</text>
-    <text x="466" y="72" class="hud-metric">Distributed worker pipeline</text>
-  </g>
-
-  <!-- Right Side: Animated Spatial Radar Display -->
-  <g transform="translate(1040, 160)">
-    <!-- Concentric Target Rings -->
-    <circle cx="0" cy="0" r="110" fill="none" stroke="#21262D" stroke-width="1.5"/>
-    <circle cx="0" cy="0" r="80" fill="none" stroke="#30363D" stroke-width="1"/>
-    <circle cx="0" cy="0" r="50" fill="none" stroke="#C41E3A" stroke-opacity="0.3" stroke-width="1"/>
-    <circle cx="0" cy="0" r="20" fill="none" stroke="#E85D04" stroke-opacity="0.5" stroke-width="1"/>
-
-    <!-- Crosshairs -->
-    <line x1="-120" y1="0" x2="120" y2="0" stroke="#30363D" stroke-width="1"/>
-    <line x1="0" y1="-120" x2="0" y2="120" stroke="#30363D" stroke-width="1"/>
-
-    <!-- Hexagonal H3 Nodes -->
-    <polygon points="0,-15 13,-7 13,8 0,15 -13,8 -13,-7" fill="#C41E3A" fill-opacity="0.4" stroke="#C41E3A" stroke-width="1.5"/>
-    <polygon points="45,-35 55,-29 55,-17 45,-11 35,-17 35,-29" fill="#3FCF8E" fill-opacity="0.3" stroke="#3FCF8E" stroke-width="1"/>
-    <polygon points="-50,40 -40,46 -40,58 -50,64 -60,58 -60,46" fill="#38BDF8" fill-opacity="0.3" stroke="#38BDF8" stroke-width="1"/>
-    <polygon points="60,30 70,36 70,48 60,54 50,48 50,36" fill="#E85D04" fill-opacity="0.4" stroke="#E85D04" stroke-width="1"/>
-
-    <!-- Sweeping Radar Beam -->
-    <g class="radar-sweep-fan">
-      <path d="M 0 0 L 110 0 A 110 110 0 0 1 77 77 Z" fill="url(#radar-sweep)" />
-      <line x1="0" y1="0" x2="110" y2="0" stroke="#C41E3A" stroke-width="2" filter="url(#glow)"/>
-    </g>
-  </g>
-
-  <!-- Bottom Accent Ribbon -->
-  <rect x="0" y="316" width="1200" height="4" fill="url(#accent-grad)" rx="2"/>
+  <!-- Sub Metrics -->
+  <text x="40" y="198" font-family="monospace" font-size="11" fill="#8B949E">STACK: Next.js 16 (App Router) · React 19 · Supabase Postgres (RLS) · BullMQ · Redis · Uber H3 · Expo 57</text>
 </svg>
