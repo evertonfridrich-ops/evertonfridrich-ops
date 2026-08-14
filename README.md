@@ -12,9 +12,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Architecture-Distributed_%26_Hexagonal-E85D04?style=for-the-badge" alt="Architecture"/>
+  <img src="https://img.shields.io/badge/Roadmap-S%C3%A9quito_v2.0_Active-3FCF8E?style=for-the-badge&logo=github&logoColor=white" alt="Roadmap"/>
   <img src="https://img.shields.io/badge/Security-SLSA_Level_3-C41E3A?style=for-the-badge&logo=githubactions&logoColor=white" alt="SLSA"/>
   <img src="https://img.shields.io/badge/Multi--Tenancy-Zero--Trust_RLS-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres RLS"/>
-  <img src="https://img.shields.io/badge/Agentic_AI-Multi--Agent_Mesh-3FCF8E?style=for-the-badge&logo=openai&logoColor=white" alt="AI Agents"/>
   <img src="https://img.shields.io/badge/SLA_Availability-99.99%25-000000?style=for-the-badge&logo=datadog&logoColor=white" alt="SLA"/>
 </p>
 
@@ -22,7 +22,7 @@
 
 ## 🏛️ Systems Portfolio & Engineering Matrix
 
-> **Interactive Architecture Breakdown:** Clique em qualquer ecossistema abaixo para inspecionar a topografia do sistema, topologia de rede, garantias de SLA e padrões de isolamento sem expor dados proprietários.
+> **Interactive Architecture Breakdown:** Clique em qualquer ecossistema abaixo para inspecionar a topografia do sistema, topologia de rede, garantias de SLA, roadmap iterativo e padrões de isolamento.
 
 ```mermaid
 graph LR
@@ -41,8 +41,8 @@ graph LR
 
 ## 🔍 Deep Dive de Arquitetura por Ecossistema
 
-<details>
-<summary>📦 <strong>1. Séquito Engine — Food-Tech SaaS &amp; Realtime H3 Logistics</strong> (Clique para expandir)</summary>
+<details open>
+<summary>📦 <strong>1. Séquito Engine — Food-Tech SaaS &amp; Realtime H3 Logistics (Project v2.0 Roadmap)</strong></summary>
 <br>
 
 #### 📐 Topografia Distribuída do Sistema
@@ -68,6 +68,32 @@ flowchart TD
 
     EdgeLayer <-->|WSS / HTTPS| AsyncCore
     AsyncCore <-->|Contexto Criptográfico tenant_id| Persistence
+```
+
+#### 🗺️ Séquito Product v2.0 — Milestone Execution Roadmap
+```mermaid
+gantt
+    title Séquito Systems Roadmap v2.0
+    dateFormat  YYYY-MM-DD
+    section Phase 1: Core Engine
+    Multi-tenant Postgres RLS Schema       :done, p1_1, 2025-10-01, 2025-12-15
+    Web PDV & Order Intake (Next.js 16)    :done, p1_2, 2025-11-01, 2026-01-20
+    BullMQ Ingestion & Redis Pipelines     :done, p1_3, 2025-12-01, 2026-02-10
+    
+    section Phase 2: Logistics & Field Ops
+    Uber H3 Spatial Clustering (Res-9)     :active, p2_1, 2026-02-15, 2026-05-30
+    Expo 57 Mobile Driver App (GPS/OTP)    :active, p2_2, 2026-03-01, 2026-06-15
+    Centrifuge Realtime Telemetry Mesh     :active, p2_3, 2026-04-01, 2026-07-30
+    
+    section Phase 3: Co-Delivery & Multi-Store
+    OSRM / VROOM Multi-Stop Optimizer      :p3_1, 2026-07-01, 2026-09-30
+    Dynamic Surge & Fleet Allocation       :p3_2, 2026-08-01, 2026-10-31
+    Cross-Restaurant Batching Engine       :p3_3, 2026-09-01, 2026-11-30
+    
+    section Phase 4: Fiscal & Settlement
+    Automated SEFAZ DANFE Fiscal Engine    :p4_1, 2026-10-01, 2026-12-31
+    Split Payment Escrow & Reconciliation  :p4_2, 2026-11-01, 2027-02-28
+    SOC 2 Type II & Security Compliance    :p4_3, 2026-12-01, 2027-03-31
 ```
 
 #### 🛡️ Invariantes de Engenharia & Métricas de Missão Crítica
@@ -145,7 +171,7 @@ flowchart TD
 #### 🛡️ Invariantes de Engenharia & Métricas de Missão Crítica
 * **Circuit Breakers de Capital:** Trava automática de segurança em caso de slippage excessivo ou volatilidade anômala.
 * **Logs Imutáveis de Auditoria:** Rastreabilidade criptográfica de cada preenchimento de ordem e cálculo de slippage.
-* **Execução Assíncrona Não-Bloqueante:** Loop de eventos em Node.js/Python isolado de I/O em disco.
+* **Execução Assíncrona Não-Bloqueante:** Loop de eventos isolado de I/O em disco.
 
 </details>
 
