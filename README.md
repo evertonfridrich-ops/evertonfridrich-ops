@@ -1,63 +1,54 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=C41E3A&height=190&section=header&text=Everton%20Fridrich&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=Enterprise%20Food-Tech%20%C2%B7%20Multi-Tenant%20SaaS%20%C2%B7%20Realtime%20H3%20Logistics&descAlignY=58&descSize=14" alt="Everton Fridrich — Enterprise Systems Architecture" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=C41E3A&height=190&section=header&text=Everton%20Fridrich&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=Principal%20Systems%20Architect%20%C2%B7%20Distributed%20Infra%20%C2%B7%20Autonomous%20AI%20%C2%B7%20FinTech&descAlignY=58&descSize=14" alt="Everton Fridrich — Enterprise Systems Architecture" />
 </div>
 
 <br/>
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3000&pause=1000&color=C41E3A&center=true&vCenter=true&multiline=true&repeat=true&width=860&height=55&lines=ENTERPRISE+FOOD-TECH+INFRASTRUCTURE;HIGH-THROUGHPUT+REALTIME+LOGISTICS+%C2%B7+UBER+H3;MULTI-TENANT+DISTRIBUTED+SYSTEMS+%C2%B7+ZERO-TRUST+RLS" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3000&pause=1000&color=C41E3A&center=true&vCenter=true&multiline=true&repeat=true&width=880&height=55&lines=PRINCIPAL+SYSTEMS+ARCHITECT+%C2%B7+MULTI-VENTURE+ENGINEERING;DISTRIBUTED+LOGISTICS+%C2%B7+AUTONOMOUS+AI+AGENTS+%C2%B7+QUANT+ENGINES;ZERO-TRUST+MULTI-TENANCY+%C2%B7+HIGH-CONCURRENCY+INFRA" alt="Typing SVG" />
   </a>
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/SLA_Availability-99.99%25-3FCF8E?style=for-the-badge&logo=datadog&logoColor=white" alt="SLA"/>
-  <img src="https://img.shields.io/badge/Spatial_Index-Uber_H3_Res--9-000000?style=for-the-badge&logo=uber&logoColor=white" alt="Uber H3"/>
+  <img src="https://img.shields.io/badge/Architecture-Distributed_%26_Hexagonal-E85D04?style=for-the-badge" alt="Architecture"/>
   <img src="https://img.shields.io/badge/Security-SLSA_Level_3-C41E3A?style=for-the-badge&logo=githubactions&logoColor=white" alt="SLSA"/>
-  <img src="https://img.shields.io/badge/Data_Isolation-PostgreSQL_RLS-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres RLS"/>
-  <img src="https://img.shields.io/badge/Architecture-Clean_%26_Hexagonal-E85D04?style=for-the-badge" alt="Clean Arch"/>
+  <img src="https://img.shields.io/badge/Multi--Tenancy-Zero--Trust_RLS-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres RLS"/>
+  <img src="https://img.shields.io/badge/Agentic_AI-Multi--Agent_Mesh-3FCF8E?style=for-the-badge&logo=openai&logoColor=white" alt="AI Agents"/>
+  <img src="https://img.shields.io/badge/SLA_Availability-99.99%25-000000?style=for-the-badge&logo=datadog&logoColor=white" alt="SLA"/>
 </p>
 
 ---
 
-## 🏛️ Executive Summary & Engineering Thesis
+## 🏛️ Systems Portfolio & Engineering Matrix
 
-> **Engineering Mandate:** Re-architecting restaurant commerce operations from predatory marketplace dependency into institutional-grade, self-hosted multi-tenant infrastructure — encompassing high-concurrency Point of Sale (PDV), sub-second geospatial driver clustering (Uber H3), resilient async queue pipelines (BullMQ), and cryptographic data isolation.
+> **Core Focus:** Building high-reliability distributed systems across vertical SaaS, realtime geospatial logistics, autonomous multi-agent intelligence, and algorithmic trading engines.
 
 ```mermaid
-flowchart LR
-    subgraph ClientEdge [Edge & Client Layer]
-        PDV[Web PDV / Next.js 16 App Router]
-        DriverApp[Expo 57 Mobile Field Ops]
-    end
+graph TD
+    Architect[Everton Fridrich · Principal Systems Architect]
+    
+    Architect --> S1[Séquito Engine · Food-Tech & Realtime Logistics]
+    Architect --> S2[Conselho IA · Autonomous Multi-Agent Intelligence]
+    Architect --> S3[Crypto Quant Engine · Algorithmic Trading Systems]
+    Architect --> S4[Visão Comps · PropTech Analytics Engine]
+    Architect --> S5[Aura Narra · Neural Voice & Narrative AI]
 
-    subgraph CoreEngine [Distributed Core]
-        API[App Router API / Server Actions]
-        Queue[(BullMQ / Redis Ingestion)]
-        Worker[Logistics & H3 Routing Worker]
-    end
-
-    subgraph DataTrust [Trust & Persistence Boundary]
-        DB[(Supabase PostgreSQL Multi-Tenant RLS)]
-        Search[(Meilisearch Engine)]
-        Gateways[Stripe / Asaas / Webhooks]
-    end
-
-    ClientEdge <-->|HTTPS / Realtime WebSocket| CoreEngine
-    CoreEngine <-->|Zero-Trust Tenant Context| DataTrust
+    classDef core fill:#0D1117,stroke:#C41E3A,stroke-width:2px,color:#fff;
+    class Architect,S1,S2,S3,S4,S5 core;
 ```
 
 ---
 
-## ⚡ Systems Topography & Domain Matrix
+## ⚡ Active Ventures & Architectural Topography
 
-| Subsystem Domain | Architectural Responsibility | Core Technologies & Invariants | SLA / Benchmark |
+| System / Project | Domain & Responsibility | Core Stack & Invariants | Delivery Status |
 | :--- | :--- | :--- | :--- |
-| **High-Throughput Client** | Sub-second order checkout, kitchen display systems (KDS), multi-store management. | `Next.js 16`, `React 19`, `Tailwind CSS 4`, `Zod v4` | P95 Load &lt; 350ms |
-| **Geospatial Field Ops** | Real-time driver telemetry, OTP validation, background GPS, number masking. | `Expo 57`, `React Native`, `Centrifuge Realtime` | P99 Sync &lt; 150ms |
-| **Logistics Cluster Engine** | Hexagonal dispatch mesh, OSRM/VROOM routing, co-delivery clustering. | `Uber H3 (Res-9)`, `BullMQ`, `Redis Cluster` | Dynamic batching &lt; 2s |
-| **Data & Multi-Tenancy** | Zero-trust data segregation per restaurant node with row-level policies. | `Supabase Postgres`, `RLS Engine`, `SQL Migrations` | 100% Query Isolation |
-| **Financial Ledger & Fiscal**| Idempotent billing, webhook signature verification, DANFE emission. | `Stripe`, `Asaas`, `Cryptographic HMAC Validation` | Zero Duplicate Charge |
+| **Séquito** | Multi-tenant Food-Tech SaaS, PDV de alta vazão, despacho geoespacial Uber H3 e app mobile de motoboys. | `Next.js 16`, `React 19`, `Supabase RLS`, `BullMQ`, `Redis`, `Expo 57` | Production Ready (v1.0) |
+| **Conselho IA** | SaaS consultivo baseado em pipeline de inteligência de nível institucional com orquestração de agentes autônomos. | `FastAPI`, `Multi-Agent Networks`, `Vector Embeddings`, `LLM Tool Mesh` | Core Architecture |
+| **Crypto Quant Engine** | Robô de negociação algorítmica em criptoativos, execução de ordens e telemetria de mercado. | `Node.js`, `Python`, `Exchange WebSockets`, `Risk Management Circuit Breakers` | Active Telemetry |
+| **Visão Comps** | Plataforma PropTech para precificação preditiva e inteligência de mercado imobiliário. | `Next.js App Router`, `PostgreSQL`, `Data Ingestion Pipelines` | Specialized Engine |
+| **Aura Narra** | Narrative engine com síntese neural de voz em tempo real (Chirp 3) e processamento gerador de mídia. | `Generative Audio APIs`, `Chirp 3 Engine`, `TypeScript` | Prototype Active |
 
 ---
 
@@ -81,7 +72,7 @@ flowchart LR
 
 ---
 
-## 🔒 Trust Center, Cryptography & Governance
+## 🔒 Trust Center & Engineering Governance
 
 ```text
 [CRYPTOGRAPHIC IDENTITY & SECURITY ATTESTATION]
@@ -89,23 +80,23 @@ Primary Maintainer  : Everton Fridrich (evertonfridrich-ops)
 Commit Verification : GPG / SSH Verified Signatures Enforced
 Supply Chain Level  : SLSA Level 3 Compliant CI Pipeline
 Data Compliance     : LGPD / GDPR Multi-Tenant Strict Isolation
-Security Vulnerability Disclosure: security@sequito.io / evertonfridrich@gmail.com
+Contact / Inquiries : evertonfridrich@gmail.com
 ```
 
 <details>
-<summary>📋 <strong>Enterprise Architecture Invariants & Standards</strong> (Click to expand)</summary>
+<summary>📋 <strong>Architecture Invariants Across All Systems</strong> (Click to expand)</summary>
 <br>
 
-1. **Zero-Trust Multi-Tenancy:** Every mutation and query must bind to the cryptographic tenant context. Bypass attempts trigger immediate audit alerts.
-2. **Deterministic Schemas:** Zero untyped boundaries. Every input into Server Actions, workers, and webhooks requires strict Zod schema validation.
-3. **Resilient Asynchrony:** Network calls to external gateways (delivery platforms, payment processors) are decoupled via BullMQ workers with exponential backoff and dead-letter queues.
-4. **Observable by Default:** Distributed traces and structured JSON logging hooked directly into Sentry and PostHog.
+1. **Zero-Trust Multi-Tenancy:** Garantia estrita de isolamento de dados por organização/cliente em todas as bases relacionais.
+2. **Schema-Driven Development:** Validação rigorosa de tipos na borda com Zod e Pydantic para eliminar erros em tempo de execução.
+3. **Desacoplamento Assíncrono:** Operações pesadas e integrações com terceiros operam via filas tolerantes a falhas com backoff exponencial.
+4. **Observabilidade Total:** Logs estruturados em formato JSON, métricas de latência P99 e rastreamento distribuído de ponta a ponta.
 
 </details>
 
 ---
 
-## 🐍 Continuous Integration & Dispatch Telemetry
+## 🐍 Continuous Activity & Dispatch Telemetry
 
 <div align="center">
   <picture>
@@ -122,5 +113,5 @@ Security Vulnerability Disclosure: security@sequito.io / evertonfridrich@gmail.c
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=evertonfridrich-ops&color=c41e3a&style=for-the-badge&label=INSTITUTIONAL+TELEMETRY+VIEWS" alt="Telemetry Views" />
   <br/>
-  <sub>Séquito Distributed Engine · Engineered with Staff/Tier-0 Standards · 2026</sub>
+  <sub>Everton Fridrich · Distributed Systems &amp; Autonomous AI Engineering · 2026</sub>
 </p>
