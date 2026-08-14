@@ -22,17 +22,16 @@
 
 ## 🏛️ Systems Portfolio & Engineering Matrix
 
-> **Core Focus:** Building high-reliability distributed systems across vertical SaaS, realtime geospatial logistics, autonomous multi-agent intelligence, and algorithmic trading engines.
+> **Interactive Architecture Breakdown:** Clique em qualquer ecossistema abaixo para inspecionar a topografia do sistema, topologia de rede, garantias de SLA e padrões de isolamento sem expor dados proprietários.
 
 ```mermaid
-graph TD
+graph LR
     Architect[Everton Fridrich · Principal Systems Architect]
-    
-    Architect --> S1[Séquito Engine · Food-Tech & Realtime Logistics]
-    Architect --> S2[Conselho IA · Autonomous Multi-Agent Intelligence]
-    Architect --> S3[Crypto Quant Engine · Algorithmic Trading Systems]
-    Architect --> S4[Visão Comps · PropTech Analytics Engine]
-    Architect --> S5[Aura Narra · Neural Voice & Narrative AI]
+    Architect --> S1[1. Séquito Engine · Food-Tech & H3 Logistics]
+    Architect --> S2[2. Conselho IA · Autonomous Multi-Agent Mesh]
+    Architect --> S3[3. Crypto Quant · High-Frequency Trading Engine]
+    Architect --> S4[4. Visão Comps · PropTech Analytics Engine]
+    Architect --> S5[5. Aura Narra · Generative Voice & Audio Engine]
 
     classDef core fill:#0D1117,stroke:#C41E3A,stroke-width:2px,color:#fff;
     class Architect,S1,S2,S3,S4,S5 core;
@@ -40,15 +39,153 @@ graph TD
 
 ---
 
-## ⚡ Active Ventures & Architectural Topography
+## 🔍 Deep Dive de Arquitetura por Ecossistema
 
-| System / Project | Domain & Responsibility | Core Stack & Invariants | Delivery Status |
-| :--- | :--- | :--- | :--- |
-| **Séquito** | Multi-tenant Food-Tech SaaS, PDV de alta vazão, despacho geoespacial Uber H3 e app mobile de motoboys. | `Next.js 16`, `React 19`, `Supabase RLS`, `BullMQ`, `Redis`, `Expo 57` | Production Ready (v1.0) |
-| **Conselho IA** | SaaS consultivo baseado em pipeline de inteligência de nível institucional com orquestração de agentes autônomos. | `FastAPI`, `Multi-Agent Networks`, `Vector Embeddings`, `LLM Tool Mesh` | Core Architecture |
-| **Crypto Quant Engine** | Robô de negociação algorítmica em criptoativos, execução de ordens e telemetria de mercado. | `Node.js`, `Python`, `Exchange WebSockets`, `Risk Management Circuit Breakers` | Active Telemetry |
-| **Visão Comps** | Plataforma PropTech para precificação preditiva e inteligência de mercado imobiliário. | `Next.js App Router`, `PostgreSQL`, `Data Ingestion Pipelines` | Specialized Engine |
-| **Aura Narra** | Narrative engine com síntese neural de voz em tempo real (Chirp 3) e processamento gerador de mídia. | `Generative Audio APIs`, `Chirp 3 Engine`, `TypeScript` | Prototype Active |
+<details>
+<summary>📦 <strong>1. Séquito Engine — Food-Tech SaaS &amp; Realtime H3 Logistics</strong> (Clique para expandir)</summary>
+<br>
+
+#### 📐 Topografia Distribuída do Sistema
+```mermaid
+flowchart TD
+    subgraph EdgeLayer [Borda & Clientes]
+        PDV[Next.js 16 App Router · PDV Web]
+        Mobile[Expo 57 · App Motoboy GPS]
+    end
+
+    subgraph AsyncCore [Motor de Filas & Roteamento]
+        Ingestion[Ingestion API / Server Actions]
+        Queue[(BullMQ / Redis Cluster)]
+        H3Engine[Uber H3 Res-9 Spatial Clustering]
+        Centrifuge[Centrifuge Realtime WebSocket Mesh]
+    end
+
+    subgraph Persistence [Isolamento Multi-Tenant]
+        DB[(Supabase PostgreSQL com RLS)]
+        Meili[(Meilisearch Engine)]
+        Gateways[Stripe / Asaas / Webhooks Assinados]
+    end
+
+    EdgeLayer <-->|WSS / HTTPS| AsyncCore
+    AsyncCore <-->|Contexto Criptográfico tenant_id| Persistence
+```
+
+#### 🛡️ Invariantes de Engenharia & Métricas de Missão Crítica
+* **Clusterização Geoespacial:** Agrupamento dinâmico de rotas em resolução hexagonal H3 (Res-9) em `< 2s`.
+* **Zero-Trust Multi-Tenancy:** 100% das tabelas protegidas por Row Level Security com chave estrita de `tenant_id`.
+* **Desacoplamento Assíncrono:** Falhas de rede em gateways de pagamento ou emissão de DANFE são amortecidas via BullMQ com dead-letter queues e retry exponencial.
+
+</details>
+
+<details>
+<summary>🤖 <strong>2. Conselho IA — Autonomous Multi-Agent Intelligence Pipeline</strong> (Clique para expandir)</summary>
+<br>
+
+#### 📐 Topografia da Rede de Agentes
+```mermaid
+flowchart LR
+    User[User Consultation Query] --> Orchestrator[Master Advisory Orchestrator]
+    
+    subgraph MultiAgentMesh [Conselho de Especialistas Virtuais]
+        VP[VP of Engineering Agent]
+        CISO[CISO Security & Compliance Agent]
+        Quant[Quant Portfolio Strategist Agent]
+        DevRel[DevRel & Branding Agent]
+    end
+
+    subgraph ConsensusPipeline [Camada de Julgamento & Refino]
+        Debate[Peer Cross-Evaluation / Debate Engine]
+        Synthesizer[Consolidated Report Generator]
+    end
+
+    Orchestrator --> MultiAgentMesh
+    MultiAgentMesh --> Debate
+    Debate --> Synthesizer
+    Synthesizer --> Output[Relatório Institucional Acionável]
+```
+
+#### 🛡️ Invariantes de Engenharia & Métricas de Missão Crítica
+* **Orquestração Paralela Quota-Aware:** Execução assíncrona com balanceamento dinâmico de taxa e limites de tokens de LLM.
+* **Anti-Alucinação & Consenso Cruzado:** Validação estrita por matriz de consenso onde teses conflitantes são arbitradas antes da síntese final.
+* **Saída Estruturada:** Contratos de resposta validados em tempo de execução via schemas Zod / Pydantic.
+
+</details>
+
+<details>
+<summary>📈 <strong>3. Crypto Quant Engine — Algorithmic Trading &amp; Execution Systems</strong> (Clique para expandir)</summary>
+<br>
+
+#### 📐 Pipeline de Telemetria e Execução de Ordens
+```mermaid
+flowchart TD
+    subgraph MarketFeeds [Feeds de Mercado em Baixa Latência]
+        Binance[Binance WebSocket Stream]
+        TradingView[TradingView Signal Webhooks]
+    end
+
+    subgraph CoreEngine [Motor de Processamento Quantitativo]
+        Parser[Normalizador de Ordem & Sanitizador]
+        RiskManager{Circuit Breaker & Risk Guard}
+        Strategy[Calculadora de Sinal & Momentum]
+    end
+
+    subgraph Execution [Liquidação & Logging]
+        ExchangeAPI[Order Execution Gateway]
+        AuditLog[(PostgreSQL Immutable Ledger)]
+    end
+
+    MarketFeeds --> Parser
+    Parser --> Strategy
+    Strategy --> RiskManager
+    RiskManager -->|Aprovado pelo Risco| ExchangeAPI
+    RiskManager -.->|Rejeitado / Risco Extrapolado| AuditLog
+    ExchangeAPI --> AuditLog
+```
+
+#### 🛡️ Invariantes de Engenharia & Métricas de Missão Crítica
+* **Circuit Breakers de Capital:** Trava automática de segurança em caso de slippage excessivo ou volatilidade anômala.
+* **Logs Imutáveis de Auditoria:** Rastreabilidade criptográfica de cada preenchimento de ordem e cálculo de slippage.
+* **Execução Assíncrona Não-Bloqueante:** Loop de eventos em Node.js/Python isolado de I/O em disco.
+
+</details>
+
+<details>
+<summary>🏢 <strong>4. Visão Comps — PropTech Real Estate Analytics Engine</strong> (Clique para expandir)</summary>
+<br>
+
+#### 📐 Topologia do Pipeline de Avaliação Imobiliária
+```mermaid
+flowchart LR
+    Scraper[Property Listings Ingestion] --> Normalizer[Data Cleansing & Geo-coding]
+    Normalizer --> SpatialIndex[Spatial Valuation Grid]
+    SpatialIndex --> AVM[Automated Valuation Model - AVM]
+    AVM --> Dashboard[Next.js Interactive Comps Dashboard]
+```
+
+#### 🛡️ Invariantes de Engenharia & Métricas de Missão Crítica
+* **Indexação Geoespacial:** Comparação de imóveis semelhantes por raio de vizinhança, histórico de transações e atributos padronizados.
+* **Deduplicação Inteligente:** Algoritmos de correlação para unificar anúncios duplicados entre imobiliárias.
+
+</details>
+
+<details>
+<summary>🎙️ <strong>5. Aura Narra — Generative Audio &amp; Narrative Media Engine</strong> (Clique para expandir)</summary>
+<br>
+
+#### 📐 Pipeline de Síntese Neural de Voz
+```mermaid
+flowchart LR
+    Script[Script & Prompt Ingestion] --> TTS[Chirp 3 Neural Speech Engine]
+    TTS --> AudioBuffer[Audio Slicing & Normalization]
+    AudioBuffer --> StreamEngine[Real-time Stream Buffer]
+    StreamEngine --> MobileClient[Mobile & Web Audio Player]
+```
+
+#### 🛡️ Invariantes de Engenharia & Métricas de Missão Crítica
+* **Latência de Síntese:** Buffer de streaming em chunks que permite início de reprodução em `< 800ms`.
+* **Normalização de Áudio:** Processamento de faixa dinâmica e bitrate otimizado para reprodução em dispositivos móveis.
+
+</details>
 
 ---
 
@@ -84,7 +221,7 @@ Contact / Inquiries : evertonfridrich@gmail.com
 ```
 
 <details>
-<summary>📋 <strong>Architecture Invariants Across All Systems</strong> (Click to expand)</summary>
+<summary>📋 <strong>Architecture Invariants Across All Systems</strong> (Clique para expandir)</summary>
 <br>
 
 1. **Zero-Trust Multi-Tenancy:** Garantia estrita de isolamento de dados por organização/cliente em todas as bases relacionais.
