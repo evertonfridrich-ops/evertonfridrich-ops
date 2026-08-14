@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="100%" src="./assets/header.svg" alt="Everton Fridrich — Enterprise Systems Architecture" />
+  <img width="100%" src="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/main/assets/header.svg" alt="Everton Fridrich — Enterprise Systems Architecture" />
 </div>
 
 <br/>
@@ -61,6 +61,26 @@ flowchart LR
 
 ---
 
+## 📊 Live Operational Telemetry
+
+<div align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/evertonfridrich-ops/evertonfridrich-ops/main/assets/telemetry.svg" alt="Operational Telemetry" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img height="165" src="https://github-readme-stats-one-bice.vercel.app/api?username=evertonfridrich-ops&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=C41E3A&icon_color=E85D04&text_color=C9D1D9&ring_color=C41E3A&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats" />
+  &nbsp;
+  <img height="165" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=evertonfridrich-ops&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=C41E3A&text_color=C9D1D9&langs_count=8&cache_seconds=86400" alt="Top Languages" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=evertonfridrich-ops&bg_color=0D1117&color=C41E3A&line=E85D04&point=FFFFFF&area=true&area_color=C41E3A&hide_border=true" alt="Activity Graph" width="100%" />
+</div>
+
+---
+
 ## 🔒 Trust Center, Cryptography & Governance
 
 ```text
@@ -82,24 +102,6 @@ Security Vulnerability Disclosure: security@sequito.io / evertonfridrich@gmail.c
 4. **Observable by Default:** Distributed traces and structured JSON logging hooked directly into Sentry and PostHog.
 
 </details>
-
----
-
-## 📊 Live Operational Telemetry
-
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=evertonfridrich-ops&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=C41E3A&icon_color=E85D04&text_color=C9D1D9&ring_color=C41E3A&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-  &nbsp;
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=evertonfridrich-ops&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=C41E3A&text_color=C9D1D9&langs_count=8" alt="Top Languages" />
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=evertonfridrich-ops&theme=tokyonight&hide_border=true&background=0D1117&ring=C41E3A&fire=E85D04&currStreakLabel=C41E3A&sideLabels=C9D1D9&currStreakNum=C9D1D9" alt="Streak Stats" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=evertonfridrich-ops&bg_color=0D1117&color=C41E3A&line=E85D04&point=FFFFFF&area=true&area_color=C41E3A&hide_border=true" alt="Activity Graph" width="100%" />
-</div>
 
 ---
 
