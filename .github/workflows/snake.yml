@@ -2,7 +2,7 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -10,19 +10,21 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Generate Snake (Séquito 2026 palette)
+      - name: Generate Snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -33,21 +35,21 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish to assets/snake on main
+      - name: Publish to assets/snake
         run: |
           mkdir -p assets/snake
           cp -f dist/github-contribution-grid-snake.svg assets/snake/snake.svg
           cp -f dist/github-contribution-grid-snake-dark.svg assets/snake/snake-dark.svg
           cp -f dist/github-contribution-grid-snake-ocean.svg assets/snake/snake-ocean.svg
-          git config user.name github-actions[bot]
-          git config user.email github-actions[bot]@users.noreply.github.com
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/snake/*.svg
-          if git diff --quiet && git diff --staged --quiet; then
+          if git diff --staged --quiet; then
             echo "No snake changes"
             exit 0
           fi
-          git commit -m "chore: update contribution snake 2026"
-          git pull --rebase origin main
+          git commit -m "chore: update contribution snake grid"
+          git pull --rebase origin main || true
           git push origin HEAD:main
 
       - name: Mirror to output branch
